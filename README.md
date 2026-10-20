@@ -4,6 +4,12 @@ Sorteia números inteiros em um intervalo de **x** a **y** (inclusive), em Pytho
 
 ## Uso
 
+Interface gráfica:
+
+```bash
+python sorteador_gui.py
+```
+
 Modo interativo:
 
 ```bash
