@@ -8,23 +8,33 @@
 </head>
 <body>
   <main class="card">
-    <h1>Sorteador de números</h1>
+    <header>
+      <div class="icon" aria-hidden="true">🎲</div>
+      <h1>Sorteador de números</h1>
+      <p class="sub">Escolha o intervalo e deixe a sorte decidir</p>
+    </header>
+
     <form id="form">
-      <label>De (x)
-        <input type="number" id="x" value="1" required>
-      </label>
-      <label>Até (y)
-        <input type="number" id="y" value="60" required>
-      </label>
+      <div class="row">
+        <label>De (x)
+          <input type="number" id="x" value="1" required>
+        </label>
+        <label>Até (y)
+          <input type="number" id="y" value="60" required>
+        </label>
+      </div>
       <label>Quantidade
         <input type="number" id="quantidade" value="1" min="1" required>
       </label>
       <label class="check">
-        <input type="checkbox" id="repetir"> Permitir repetições
+        <input type="checkbox" id="repetir"> Permitir números repetidos
       </label>
       <button type="submit">Sortear</button>
     </form>
-    <p id="resultado" aria-live="polite">—</p>
+
+    <div id="resultado" class="resultado" aria-live="polite">
+      <span class="vazio">Os números sorteados aparecem aqui</span>
+    </div>
     <p id="erro" class="erro" role="alert"></p>
   </main>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
