@@ -2,7 +2,18 @@
 
 Sorteia números inteiros em um intervalo de **x** a **y** (inclusive), em Python.
 
-## Uso
+## Versão web (Flask)
+
+Back-end em `app.py` (API `POST /api/sortear`) e front-end em `templates/` e `static/`.
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+Deploy no Render: Build Command `pip install -r requirements.txt`, Start Command `gunicorn app:app`.
+
+## Uso local
 
 Interface gráfica:
 
