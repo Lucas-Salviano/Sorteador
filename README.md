@@ -13,6 +13,15 @@ python app.py
 
 Deploy no Render: Build Command `pip install -r requirements.txt`, Start Command `gunicorn app:app`.
 
+## Docker
+
+```bash
+docker build -t sorteador:1.0 .
+docker run -p 8000:8000 sorteador:1.0
+```
+
+Acesse http://localhost:8000. A porta pode ser trocada com a variável `PORT`.
+
 ## Uso local
 
 Interface gráfica:

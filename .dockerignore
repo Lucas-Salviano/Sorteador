@@ -1,0 +1,10 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+.venv/
+.env
+README.md
+sorteador_gui.py
+Dockerfile
+.dockerignore
