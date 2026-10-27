@@ -9,7 +9,7 @@
 <body>
   <main class="card">
     <header>
-      <div class="icon" aria-hidden="true">🎲</div>
+      <img class="banana" src="{{ url_for('static', filename='banana.svg') }}" alt="Banana verde e amarela">
       <h1>Sorteador de números</h1>
       <p class="sub">Escolha o intervalo e deixe a sorte decidir</p>
     </header>
@@ -36,6 +36,11 @@
       <span class="vazio">Os números sorteados aparecem aqui</span>
     </div>
     <p id="erro" class="erro" role="alert"></p>
+
+    <footer class="autor">
+      <strong>Lucas Salviano da Costa Pinheiro</strong>
+      <span>Matrícula: 23300012</span>
+    </footer>
   </main>
   <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
